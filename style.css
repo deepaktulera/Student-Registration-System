@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+    background: linear-gradient(90deg, pink, lightblue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding: 3vw;
+    margin: 1vw;
+}
+
+header h1 {
+    color: green;
+    padding: 1vw;
+}
+
+#formSection {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 80vw;
+    min-height: 90vh;
+    padding: 1vw 2vw;
+    margin: 5vh auto;
+    border-radius: 2vw;
+    text-align: center;
+}
+form input{
+    width: 100%;
+    padding: 2vh;
+    background: transparent;
+    margin: 2vh 0;
+    border: 1px solid black;
+    cursor: pointer;
+    outline: none;
+}
+form button{
+    padding: 1vw;
+    width: 20%;
+    border-radius: 2vw;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+form button:hover{
+    background-color: green;
+    color: white;
+}
+#studentSection{
+    display: none;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 80vw;
+    min-height: 90vh;
+    padding: 1vw 2vw;
+    margin: 5vh auto;
+    border-radius: 2vw;
+}
+#tablesection{
+    width: 100%;
+    overflow-x: auto;
+}
+
+#tablesection table{
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+th,td{
+    padding: 2vh;
+    border: 1px solid gray;
+    text-align: center;
+    word-break: break-word;
+}
+th{
+    background-color: gray;
+    color: wheat;
+}
+#tablesection{
+    overflow-x: auto;
+}
+#studentSection{
+    display: none;
+}
+.delete-btn:hover{
+    background-color: red;
+    color: white;
+}
+.update-btn:hover{
+    background-color: green;
+    color: white;
+}
+
+@media (min-width:640px) {
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        height: 40vh;
+    }
+    button{
+        grid-column: span 2;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media (min-width:1025px) {
+    #wrapper{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 2vw;
+        padding: 1vw;
+    }
+
+    header{
+        grid-column: span 2;
+    }
+
+    #formSection{
+        width: 100%;
+        margin: 0;
+    }
+
+    #studentSection{
+        width: 100%;
+        margin: 0;
+    }
+}
