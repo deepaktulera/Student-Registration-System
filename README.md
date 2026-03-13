@@ -41,3 +41,6 @@ This project allows student to add, display, modify, and delete his data dynamic
 ## Author
 
 **Deepak Singh**
+
+## GitHub Repository Link
+**https://github.com/deepaktulera/Student-Registration-System**
